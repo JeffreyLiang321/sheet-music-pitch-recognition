@@ -1,0 +1,17 @@
+# dataset and derived caches (see README for the download)
+data/
+# keras checkpoints are large; the ONNX exports are what ships
+models/*.keras
+# python
+.venv/
+__pycache__/
+*.egg-info/
+.pytest_cache/
+# frontend
+web/node_modules/
+web/dist/
+# misc
+.DS_Store
+.playwright-mcp/
+*.mid
+*.musicxml

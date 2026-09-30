@@ -1,0 +1,11 @@
+[project]
+name = "omr"
+version = "0.2.0"
+description = "Sheet music to audio: notehead detection, classification and pitch estimation"
+requires-python = ">=3.10"
+
+[tool.setuptools]
+packages = ["omr", "app"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
