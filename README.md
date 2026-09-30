@@ -86,7 +86,7 @@ Held-out test songs (Chopin Op.10/1, Satie Gnossienne 1, Schumann String
 Quartet 1, Bach Goldberg Var. 16, Reger Improvisation 4, Mendelssohn Songs
 Without Words 17), 160 pages, 7,743 labelled noteheads.
 A detection counts when its centre falls inside the labelled box. Everything
-after the first row is computed on matched noteheads only, and the same
+after the first two rows is computed on matched noteheads only, and the same
 four classifiers are used in every column; only the detector differs.
 "notebook + fixes" is the notebook's segmentation with the watershed made
 reachable and staff lines removed at their detected rows instead of by a
