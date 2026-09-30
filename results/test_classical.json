@@ -1,0 +1,170 @@
+{
+  "per_song": {
+    "Bach - Goldberg Variation 16": {
+      "pages": 9,
+      "gt_notes": 417,
+      "precision": 0.9591,
+      "recall": 0.9568,
+      "f1": 0.958,
+      "class_acc": 1.0,
+      "filled_vs_hollow_acc": 1.0,
+      "half_vs_whole_acc": 1.0,
+      "hollow_matched": 5,
+      "staff_assign_acc": 1.0,
+      "pitch_step_acc": 0.985,
+      "pitch_midi_acc": 0.8847,
+      "clef_acc": 1.0,
+      "staff_count_acc": 1.0,
+      "onset_order_acc": 1.0,
+      "simultaneity_acc": 0.9368,
+      "recall_by_class": {
+        "noteheadBlack": 0.9704,
+        "noteheadHalf": 0.5,
+        "noteheadWhole": 0.4286
+      }
+    },
+    "Chopin - Etude Op 10 no 1": {
+      "pages": 39,
+      "gt_notes": 1377,
+      "precision": 0.9666,
+      "recall": 0.9237,
+      "f1": 0.9447,
+      "class_acc": 1.0,
+      "filled_vs_hollow_acc": 1.0,
+      "half_vs_whole_acc": 1.0,
+      "hollow_matched": 75,
+      "staff_assign_acc": 1.0,
+      "pitch_step_acc": 0.8082,
+      "pitch_midi_acc": 0.7437,
+      "clef_acc": 1.0,
+      "staff_count_acc": 1.0,
+      "onset_order_acc": 1.0,
+      "simultaneity_acc": 1.0,
+      "recall_by_class": {
+        "noteheadBlack": 0.9836,
+        "noteheadWhole": 0.3828,
+        "noteheadHalf": 0.8125
+      }
+    },
+    "Mendelssohn - Songs Without Words 17": {
+      "pages": 44,
+      "gt_notes": 2481,
+      "precision": 0.9706,
+      "recall": 0.813,
+      "f1": 0.8848,
+      "class_acc": 1.0,
+      "filled_vs_hollow_acc": 1.0,
+      "half_vs_whole_acc": 1.0,
+      "hollow_matched": 8,
+      "staff_assign_acc": 1.0,
+      "pitch_step_acc": 0.9777,
+      "pitch_midi_acc": 0.9142,
+      "clef_acc": 1.0,
+      "staff_count_acc": 1.0,
+      "onset_order_acc": 0.9999,
+      "simultaneity_acc": 0.948,
+      "recall_by_class": {
+        "noteheadBlack": 0.815,
+        "noteheadHalf": 0.6667,
+        "noteheadWhole": 0.0
+      }
+    },
+    "Reger - Improvisationen 4": {
+      "pages": 16,
+      "gt_notes": 1039,
+      "precision": 0.9458,
+      "recall": 0.8566,
+      "f1": 0.899,
+      "class_acc": 1.0,
+      "filled_vs_hollow_acc": 1.0,
+      "half_vs_whole_acc": 1.0,
+      "hollow_matched": 14,
+      "staff_assign_acc": 1.0,
+      "pitch_step_acc": 0.9,
+      "pitch_midi_acc": 0.736,
+      "clef_acc": 1.0,
+      "staff_count_acc": 1.0,
+      "onset_order_acc": 1.0,
+      "simultaneity_acc": 0.9534,
+      "recall_by_class": {
+        "noteheadBlack": 0.8639,
+        "noteheadHalf": 0.56
+      }
+    },
+    "Satie - Gnossienne 1": {
+      "pages": 17,
+      "gt_notes": 838,
+      "precision": 0.9413,
+      "recall": 0.6313,
+      "f1": 0.7557,
+      "class_acc": 1.0,
+      "filled_vs_hollow_acc": 1.0,
+      "half_vs_whole_acc": 1.0,
+      "hollow_matched": 205,
+      "staff_assign_acc": 1.0,
+      "pitch_step_acc": 0.9735,
+      "pitch_midi_acc": 0.8733,
+      "clef_acc": 1.0,
+      "staff_count_acc": 0.9412,
+      "onset_order_acc": 1.0,
+      "simultaneity_acc": 0.8249,
+      "recall_by_class": {
+        "noteheadHalf": 0.6452,
+        "noteheadWhole": 0.051,
+        "noteheadBlack": 0.7535
+      }
+    },
+    "Schumann - String Quartet 1 mvt 3": {
+      "pages": 35,
+      "gt_notes": 1591,
+      "precision": 0.8675,
+      "recall": 0.8887,
+      "f1": 0.878,
+      "class_acc": 1.0,
+      "filled_vs_hollow_acc": 1.0,
+      "half_vs_whole_acc": 1.0,
+      "hollow_matched": 83,
+      "staff_assign_acc": 1.0,
+      "pitch_step_acc": 0.9533,
+      "pitch_midi_acc": 0.7666,
+      "clef_acc": 1.0,
+      "staff_count_acc": 1.0,
+      "onset_order_acc": 1.0,
+      "simultaneity_acc": 0.9974,
+      "recall_by_class": {
+        "noteheadBlack": 0.934,
+        "noteheadHalf": 0.5133,
+        "noteheadWhole": 0.375
+      }
+    },
+    "ALL": {
+      "pages": 160,
+      "gt_notes": 7743,
+      "precision": 0.9392,
+      "recall": 0.8422,
+      "f1": 0.8881,
+      "class_acc": 1.0,
+      "filled_vs_hollow_acc": 1.0,
+      "half_vs_whole_acc": 1.0,
+      "hollow_matched": 390,
+      "staff_assign_acc": 1.0,
+      "pitch_step_acc": 0.9288,
+      "pitch_midi_acc": 0.8195,
+      "clef_acc": 1.0,
+      "staff_count_acc": 0.9938,
+      "onset_order_acc": 1.0,
+      "simultaneity_acc": 0.947,
+      "recall_by_class": {
+        "noteheadBlack": 0.8813,
+        "noteheadHalf": 0.6135,
+        "noteheadWhole": 0.249
+      }
+    }
+  },
+  "confusion": {
+    "noteheadBlack->noteheadBlack": 6131,
+    "noteheadHalf->noteheadHalf": 327,
+    "noteheadWhole->noteheadWhole": 63
+  },
+  "seconds_per_page": 0.7332659721374511
+}
