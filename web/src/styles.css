@@ -1,0 +1,41 @@
+:root {
+  color-scheme: light;
+  font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  color: #222;
+  background: #f7f7f5;
+}
+body { margin: 0; }
+.app { max-width: 1440px; margin: 0 auto; padding: 24px 16px 48px; }
+header h1 { margin: 0 0 6px; font-size: 28px; }
+header p { margin: 0 0 8px; max-width: 760px; line-height: 1.45; color: #444; }
+.notice { color: #8a5a00; background: #fff4d6; padding: 6px 10px; border-radius: 6px; display: inline-block; }
+
+.controls { margin: 18px 0; display: flex; flex-direction: column; gap: 12px; }
+.upload {
+  border: 2px dashed #b9b9b3; border-radius: 10px; padding: 34px 16px; text-align: center;
+  cursor: pointer; background: #fff; color: #555; font-size: 16px;
+}
+.upload:hover { border-color: #666; color: #222; }
+.samples { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; color: #555; }
+button, .toolbar a {
+  font: inherit; padding: 6px 12px; border-radius: 6px; border: 1px solid #bbb; background: #fff;
+  cursor: pointer; color: #222; text-decoration: none;
+}
+button:hover:not(:disabled), .toolbar a:hover { background: #eee; }
+button:disabled { opacity: 0.5; cursor: default; }
+button.primary { background: #222; color: #fff; border-color: #222; min-width: 80px; }
+button.primary:hover { background: #000; }
+.tempo { display: flex; align-items: center; gap: 12px; color: #444; }
+.tempo input { width: 260px; }
+.error { color: #b00020; }
+
+.toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-bottom: 8px; }
+.stats { color: #666; margin-left: auto; }
+.legend { display: flex; gap: 14px; margin-bottom: 10px; font-size: 14px; }
+
+.page { position: relative; max-width: 100%; margin-bottom: 20px; box-shadow: 0 1px 4px rgba(0,0,0,0.15); background: #fff; }
+.page img { display: block; max-width: 100%; height: auto; }
+.page svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.stafflabel { font-size: 15px; fill: #27d; font-weight: 600; }
+
+footer { margin-top: 32px; color: #666; font-size: 14px; max-width: 760px; line-height: 1.45; }
