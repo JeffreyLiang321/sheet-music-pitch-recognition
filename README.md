@@ -148,15 +148,18 @@ python -m pytest
 ### Deploying
 
 The Dockerfile builds the frontend and serves everything on port 7860, which
-is what Hugging Face Spaces expects. Create a Space with the Docker SDK,
-then:
+is what Hugging Face Spaces expects. Create a Space with the Docker SDK
+(paid tier as of late 2026), then upload a snapshot of the tree:
 
 ```
-git remote add hf https://huggingface.co/spaces/<user>/<space>
-git push hf main
+pip install huggingface_hub
+hf auth login            # paste a token with write access
+scripts/deploy_hf.sh     # set HF_SPACE=<user>/<space> for a different Space
 ```
 
-The YAML block at the top of this file is the Space configuration.
+The script uses `hf upload` rather than `git push` because the Space's git
+server rejects binary files in the pushed history unless they are in LFS,
+and the course-project commits contain PDFs.
 
 ### Layout
 
