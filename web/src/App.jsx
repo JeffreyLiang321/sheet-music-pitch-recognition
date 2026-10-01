@@ -83,6 +83,13 @@ export default function App() {
           reads each note's pitch from the clef and key signature, and plays the result back.
         </p>
         {server !== "ready" && <p className="notice">Server is waking up, this can take a minute on the free tier.</p>}
+        <div className="caveat">
+          <strong>What to expect.</strong> Only quarter, half and whole noteheads are recognised:
+          eighths and sixteenths (beamed or flagged notes) play as quarters and rests are skipped, so
+          rhythmically complex music will sound wrong. Key signatures and accidentals are read, but not
+          reliably in dense chords; clef changes and <em>8va</em> marks mid-line are not read at all.
+          Works on clean, printed scores, not photos or handwriting.
+        </div>
       </header>
 
       <section className="controls">
@@ -129,8 +136,8 @@ export default function App() {
       )}
 
       <footer>
-        Quarter, half and whole noteheads only; flags and beams are not read yet, so beamed passages play as
-        quarters. Everything else is described in the project README.
+        Started as a CSCI 1470 project at Brown; the pipeline, numbers on held-out pages and remaining
+        limitations are described in the project README.
       </footer>
     </div>
   );
