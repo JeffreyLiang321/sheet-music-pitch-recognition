@@ -36,8 +36,8 @@ image. The original goal in the report was to hear the music, so after the
 course I took the pipeline out of the notebooks, fixed what did not hold up
 on piano scores, and built the rest of the way to playback.
 
-**Live demo:** _link goes here once the Space is up_ (free tier, so the
-first load can take a minute while the container wakes up)
+**Live demo:** https://jeffjeff20120112-sheet-to-audio.hf.space (the Space
+sleeps after two idle days, so the first load can take a minute)
 
 Upload a PDF or image, or click one of the sample pages. The server returns
 every note it found with a pitch and a start time; the page plays in the
