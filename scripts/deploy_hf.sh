@@ -13,10 +13,12 @@ set -e
 cd "$(dirname "$0")/.."
 
 SPACE="${HF_SPACE:-jeffjeff20120112/sheet-to-audio}"
+HF=hf
+[ -x .venv/bin/hf ] && HF=.venv/bin/hf
 
 # everything the Dockerfile does not need stays out; the sample pages under
 # web/public are needed, so only the course-project images are excluded
-hf upload "$SPACE" . . --repo-type space --delete "*" \
+"$HF" upload "$SPACE" . . --repo-type space --delete "*" \
   --exclude ".git/*" --exclude ".venv/*" --exclude "data/*" --exclude "results/*" \
   --exclude "docs/*" --exclude "tests/*" --exclude "web/node_modules/*" --exclude "web/dist/*" \
   --exclude "models/*.keras" --exclude "*.pdf" --exclude "*.ipynb" --exclude "poster.png" \
