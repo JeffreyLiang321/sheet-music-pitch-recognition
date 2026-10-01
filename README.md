@@ -137,8 +137,18 @@ uvicorn app.main:app --port 8000        # http://localhost:8000
 ```
 
 The ONNX models in `models/` are enough to run the app. To retrain or
-evaluate, download DoReMi into `data/` and see `docs/walkthrough.md`, which
-also explains each stage in more detail.
+evaluate, download DoReMi into `data/` and run the scripts in order:
+
+```
+curl -L -o data/DoReMi_v1.zip https://github.com/steinbergmedia/DoReMi/releases/download/v1.0/DoReMi_v1.zip
+unzip -q data/DoReMi_v1.zip -d data
+python scripts/build_dataset.py
+python scripts/train.py detector        # then: noteheads, clef, accidental
+python scripts/export_onnx.py
+python scripts/evaluate.py --split test
+```
+
+To run a single page, or the tests:
 
 ```
 python scripts/run_page.py page.png --midi out.mid --overlay out.png
@@ -171,5 +181,5 @@ web/        React frontend
 models/     ONNX weights
 results/    evaluation output
 tests/      unit tests
-docs/       walkthrough
+docs/       app screenshot
 ```
