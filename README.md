@@ -169,7 +169,9 @@ scripts/deploy_hf.sh     # set HF_SPACE=<user>/<space> for a different Space
 
 The script uses `hf upload` rather than `git push` because the Space's git
 server rejects binary files in the pushed history unless they are in LFS,
-and the course-project commits contain PDFs.
+and the course-project commits contain PDFs. The script also prepends the
+Space's YAML configuration (`sdk`, `app_port`) to the README it uploads, so
+that block does not have to live in this file.
 
 ### Layout
 
